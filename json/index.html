@@ -5,8 +5,43 @@
     <title>JSON Sandbox</title>
   </head>
   <body>
+    <ul id="people"></ul>
     <script>
-      
+      const person = {
+        name: "Dennis",
+        age: 18,
+        address: {
+          street: "23 Pollux Circle",
+          city: "Rogerstowne"
+        },
+        running shoes: ["Tigers", "Sorkka"]
+        }
+
+        // person = JSON.stringify(person);
+        // person = JSON.parse(person);
+
+        const people =[
+          {
+            name: "Brad",
+            age: 18
+          },
+          {
+            name: "Dennis",
+            age: 18
+          },
+          {
+            name: "Adam",
+            age: 18
+          }
+        ];
+
+      // console.log(person[1].age);
+      let output = "";
+      for(let i = 0; i < people.length; i++) {
+        // console.log(people[i]);
+        output += "<li>" + people[i].name + "</li>";
+      }
+      document.getElementById("people").innerHTML = output;
     </script>
   </body>
 </html>
