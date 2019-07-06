@@ -7,7 +7,10 @@ func main() {
   var isCool = true
   isCool = false
 
-  name := "Adam"
+  // name := "Adam"
+  // email := "adam@gmail.com"
+
+  name, email := "Adam", "adam@gmail.com"
   size := 1.3
 
   fmt.Println(name, age, isCool)
